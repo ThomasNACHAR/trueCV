@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CV Thomas NACHAR</title>
+    <link rel="stylesheet" href="./assets/CSS/truestyle.css">
+    <link rel="stylesheet" href="./assets/CSS/truestylecontact.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <video autoplay muted loop>
+        <source src="./assets/videos/contactbg.mp4">
+    </video>
+    <header>
+        <nav>
+            <a href="./index.html">Accueil</a>
+            <span></span>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="container">
+            <form action="#" method="post">
+                <input type="radio"
+                 class="btn"
+                  name="btn"
+                   id="btn1"
+                   checked>
+                <input type="radio"
+                   class="btn"
+                    name="btn"
+                     id="btn2">
+                <input type="radio"
+                     class="btn"
+                      name="btn"
+                       id="btn3">
+                <input type="radio"
+                       class="btn"
+                        name="btn"
+                         id="btn4">
+                <fieldset class="nomprenom">
+                    <div class="nom">
+                        <label for="nom"><span>* </span>Nom : </label>
+                        <input type="text"
+                            name="nom"
+                            id="nom"
+                            required
+                            placeholder="NACHAR">
+                    </div>
+                    <div class="prenom">
+                        <label for="prenom"><span>* </span>Prénom : </label>
+                        <input type="text"
+                            name="prenom"
+                            id="prenom"
+                            required
+                            placeholder="Thomas">
+                    </div>
+                    <div class="boutons">
+                        
+                    </div> 
+                </fieldset>
+                <fieldset class="mailtel" id="mailtel">
+                    <div class="mail">
+                        <label for="mail"><span>* </span>Courrier électronique : </label>
+                        <input type="email"
+                            name="mail"
+                            id="mail"
+                            required
+                            placeholder="thomas.nachar@mail.com">
+                    </div>
+                    <div class="telephone">
+                        <label for="telephone">Téléphone : </label>
+                        <input type="tel" 
+                            name="telephone"
+                            id="telephone"
+                            required
+                            placeholder="06 78 91 23 45">
+                    </div>
+                </fieldset>
+                <fieldset class="choixsujet">
+                    <div class="sujet">
+                        <label for="sujet"><span>* </span>Sujet</label>
+                        <select name="sujet"
+                         id="sujet"
+                          required>
+                            <option value="" selected>---Choisissez un sujet---</option>
+                            <option value="bug">Il y a un problème dans votre CV</option>
+                            <option value="merci">Je voudrais vous remercier pour votre travail</option>
+                            <option value="aide">J'ai besoin d'aide</option>
+                            <option value="entreprise">Je souhaite vous recruter dans mon entreprise</option>
+                            <option value="idee">J'ai une idée pour améliorer votre site</option>
+                            <option value="autre">Autre</option>
+                        </select>                        
+                        <label for="other">Si autre (50 caractères maximum) :</label>
+                        <input type="text"
+                         name="other"
+                          id="other"
+                           placeholder="Votre sujet :"
+                            maxlength="50">
+                    </div>
+                </fieldset>
+                <fieldset class="choixmessage">
+                    <div class="message">
+                        <label for="message"><span>* </span>Votre message :</label>
+                        <textarea name="message"
+                         id="message"
+                          cols="30"
+                           rows="10"
+                           required></textarea>
+                    </div>
+                    <button type="submit" class="submit">Envoyer !</button>
+                </fieldset>
+                
+            </form>
+        </div>
+            
+    </main>
+    <footer>&copy; Thomas NACHAR 2023</footer>
+</body>
+</html>
